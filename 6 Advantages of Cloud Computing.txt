@@ -1,0 +1,11 @@
+1. Trade capital expense for variable expense 
+    - Tax deductible in same year with AWS
+2. Benefit from massive economies of scale
+    - Aggregated usage across their customers => lower variable costs for customers
+3. Stop guessing capacity
+4. Increase speed and agility
+    - Speed = deploy resources easily and quickly => through Management Console, CLI, API around the world
+    - Agility = react to change; speed to market and customers
+5. Stop spending money running and maintaining data centers
+    - put the time and money to innovation rather than data center management
+6. Go global in minutes

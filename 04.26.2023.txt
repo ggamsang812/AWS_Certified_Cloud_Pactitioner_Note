@@ -1,0 +1,22 @@
+Section1
+Section2
+Section3 - Cloud Computing and AWS 
+1. AWS Outposts - hardware from AWS that you can deploy from your own data center. 
+                - You can run some AWS services or connect with Region to run other AWS services
+2. AWS Local Zone - space which you can deploy your application closer to other application.
+3. AWS Wavelength Zone - same thing as AWS Local Zone but for 5G mobile device or IoT(Internet of Things)
+*Both 2 and 3 lowers latency*
+
+4. AWS Public vs Private services
+Public - Directly connected to the Internet
+        - have an end-point that you can connect directly from the internet
+        - Storage service => S3
+        - Database => DynamoDB
+        - DNS Service => Route 53
+        - Content Delivery Service - CloudFront
+Private - Inside VPC => think of this as virtual data center
+        - You can make things inside the VPC as private or public service
+        - private do not have public IP address but exist within VPC
+        - public service can have public IP but you can also make them private 
+
+5. You can connect private and public space through Internet Gateway 

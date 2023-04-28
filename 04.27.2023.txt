@@ -1,0 +1,13 @@
+Section4 - IAM
+
+ARN = Amazon Resource Names
+An access key ID and secret access key is associated with a user and is used for granting programmatic access using the CLI or API
+The account root user credentials are the email address used to create the account and a password.
+Delegate permissions => roles. It’s a great way to provide permissions to resources for users and services without using permanent credentials
+Use roles for applications that run on Amazon EC2 instances
+
+Service Control Policies (SCPs) are a feature of AWS Organizations
+SCPs contol the maximum available permissions in an AWS account
+SCP do not grant permissions
+
+Section 5 - AWS Compute Services

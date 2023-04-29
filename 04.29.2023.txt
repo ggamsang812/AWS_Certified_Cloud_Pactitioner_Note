@@ -1,0 +1,26 @@
+Section 5
+
+Internet Gateway enables access to/from the internet and is on the VPC
+User-data gives you the ability to run command when the system is first starting
+Metadata can return information about the instance that's recorded locally
+
+AWS Batch => allows you to run the batch workload 
+Batch job is a unit of work suck as shell script, executable or docker container image which means you need quite a (computing) power.
+You can either have AWS manage or unmanage AWS Batch 
+
+Amazon LightSail 
+Another compute service like EC2
+Difference is LightSail is a lot simpler to use for those with less technical expertise (in AWS)
+Lesser feature => no auto-scaling 
+Good as long as you don't need high-end compute power like EC2
+
+ECS (Elastic Container Service)
+EC2 Launch Type vs. Fargate Launch Type
+ECS EC2 Cluster vs. ECS Fargate Cluster
+Fargate => serverless => no need to worry about EC2 and other infrastructure
+
+ECR (Elastic Container Registry) => private container image registry
+
+Section 6
+
+Block vs. File. Object Storage

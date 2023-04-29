@@ -4,4 +4,4 @@ AMI (Amazon Machine Image) => image that contains the operating system and any c
 AMI is created from EBS Snapshot => point-in-time backup of an instance
 You can create the instance and save it in a EBS Snapshot => deploy the same instance later on
 ===> this is how you create the custom profile or AMI
-
+Select an instance type => create AMI from EBS Snapshot => Customized AMI

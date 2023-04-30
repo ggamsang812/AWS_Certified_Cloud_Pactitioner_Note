@@ -1,0 +1,20 @@
+Section 6
+DLM (Data Lifecycle Manager)
+-automates the creation, retention and deletion of EBS Snapshots and EBS-backed AMIs
+
+EBS vs. Instance Store
+1. EBS volumes are attached over the network => persistance 
+2. Instance Store volumes are physically attached to host => resulting high performing => data lost when instance powers down
+
+AMIs => provides the information requred to launch an instance
+=> with AMIs you can create instance that already has application installed in it
+=> no need to go through user data
+=> when you create AMI, Sanpshot is created automatically
+
+AMI => backs up entire server including attached EBS volumes
+Sanpshot => point-in-time copy of a certain volume
+
+EFS 
+=> NFS protocol
+=> Used by linux file  system to mount file system over the network
+=> You can connect multiple instance from / within AZ and same/different VPC, and on-premises client as well

@@ -4,3 +4,8 @@ You're an engineer. You'll find the way to all problems.
 --------------------------------------------------------------------------------------
 
 Section 6
+AWS Storage Gateway => Hybrid cloud storage service 
+=> Access cloud storage(S3) from on-premises applications
+
+Section 7
+DNS => Route 53

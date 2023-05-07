@@ -8,4 +8,20 @@ AWS Storage Gateway => Hybrid cloud storage service
 => Access cloud storage(S3) from on-premises applications
 
 Section 7
-DNS => Route 53
+DNS => Route 53 => To direct traffic across regions use Amazon Route 53
+
+Scaling Up => Vertical => straching the instance. => Still have single point of failure
+Scaling Out => Horizontal => Auto Scaling Group => Use Load Balancer to spread the load between created instances => elasticity and scalability
+Load Balancer - will re-route the connection if the one of the instance fails => High Availability (Fault Tolerance)
+
+Usually use Auto Scaling and Load Balancer together
+
+**Availability Zone are composed of one or more data center**
+
+EC2 Auto Scaling responds to EC2 status checks and CloudWatch metrics
+
+
+
+In Amazon Route, what is the name for the configuration item that holds a collection of records belonging to a domain?
+=> A hosted zone represents a set of records belonging to a domain ex) browser ask hosted zone what the IP address for example.com 
+=> hosted zone returns the IP address => browser now connects (maybe HTTP GET) to web server in AZ 

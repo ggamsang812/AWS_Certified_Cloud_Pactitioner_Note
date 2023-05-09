@@ -1,2 +1,19 @@
 Section 8 - Serverless services
+SQS - for decoupling / decoupled application 
 
+Serverless services include:
+    AWS Lambda => for functions
+    AWS Fargate => for ECS container + Docker container
+    Amazon EventBridge => Event Bus
+    AWS Step functions
+    Amazon SQS
+    Amazon SNS
+    Amazon API Gateway 
+    Amazon S3
+    Amazon DynamoDB
+
+Amazon MQ - similar to Amazon SQS - Used when customer requireing industry standard APIs and protocols (like on-premise) - Message broker service
+
+Use Step Function rather than Simple Workflow Service => SWF is best suited for human-enabled workflows, like an order fulfillment center or for procedural requests, not event-driven applications
+
+Amazon LightSail - manage the instance you provision 

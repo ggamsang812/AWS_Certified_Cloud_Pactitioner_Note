@@ -1,0 +1,10 @@
+Section 9 - Networking
+
+VPC - within the region => internet gateway is attached to the VPC to be used to connect to the internet
+subnets - within AZs
+
+Virtual Private Gateway + Customer Gateway
+=> Amazon VPC side and Customer side of VPN(Virtual Private Network) connection
+
+Security Group (Stateful, Instance level, only allow rule) + Network ACL (Stateless, Subnet level, allow and deny rules)
+=> Instance level + Subnet Firewall 

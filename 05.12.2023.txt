@@ -1,0 +1,43 @@
+Section 9 - Networking
+
+VPC - within the region => internet gateway is attached to the VPC to be used to connect to the internet
+subnets - within AZs
+
+Virtual Private Gateway + Customer Gateway
+=> Amazon VPC side and Customer side of VPN(Virtual Private Network) connection
+
+Security Group (Stateful, Instance level, only allow rule) + Network ACL (Stateless, Subnet level, allow and deny rules)
+=> Instance level + Subnet Firewall 
+
+NAT Instance vs NAT Gateway (Both IN public subnet)
+=> to connect from private subnets to internet
+=> instance in private subnet connects to NAT in public subnet using private IP 
+Old way, controlled by me 
+vs 
+New way,  controlled by AWS manage device, elastic scalable, automatic high availability
+
+VPC Peering - To connect same/different account/region using private IP address
+=> NOT transitive => A, B, C needs connection to each other DIRECTLY to each other
+
+Amazon VPN 
+=> Public connectivity + variable performance
+=> for on-premise data center
+=> Virtual Private Gateway on AWS Side
+
+AWS Direct Connect
+=> works with AWS Direct Connect Location 
+=> Private connectivity between AWS and your data-center => Avoids pulbic internet  
+=> consistent network experience - increase speed/latency + bandwidth/throughput 
+=> better than VPN for large volumes of data => more cost if not large 
+
+AWS Transit Gateway
+=> imagine having VPC Peering for LOTS of VPCs => use this instead
+=> is a netwrok transit hub that interconnects VPCs and on-premises networks 
+=> can be attached to VPN, Direct Connect Gateway, 3rd parth applications in other region
+
+AWS Outposts
+=> Helps with using AWS resources in on-premise data center using specialized hardware from AWS 
+=> extend VPC from AWS Cloud to Corporate data center 
+=> now you can create private subnets in corporate data center and deploy instance 
+=> communicate with private IP address 
+=> EC2, EBS, S3, VPC, ECS/EKS, RDS, EMR

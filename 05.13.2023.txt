@@ -1,0 +1,19 @@
+Section 10 - Deployment + Automation
+1. Amazon CloudFront 
+=> content delivery network (CDN)
+=> increase latency by caching 
+=> Original content in CloudFront Origins => Gets pushed and cached to Edge Location => Also use AWS Global network
+
+2. AWS Global Accelerator
+=> Leverages Edge Location + AWS Global network
+=> sending the incoming connections to the regions where your application end points are running
+=> Provides failover between Regions => first connects to the closest region from the user and if it that fails it will go to the next region
+
+3. AWS CloudFormation 
+=> where we can define how we want to build our infrastructure in AWS in a text file => import this file and deploy our infrastructure globally 
+
+4. AWS Elastic Beanstalk 
+=> Platform as a service solution 
+
+5. AWS Development tools 
+=> tool sets to deploy a continuous integration and delivery architecture on AWS 

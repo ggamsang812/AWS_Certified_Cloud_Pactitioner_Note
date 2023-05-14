@@ -3,6 +3,7 @@ Section 10 - Deployment + Automation
 => content delivery network (CDN)
 => increase latency by caching 
 => Original content in CloudFront Origins => Gets pushed and cached to Edge Location => Also use AWS Global network
+=> Also provides security against DDos attacks
 
 2. AWS Global Accelerator
 => Leverages Edge Location + AWS Global network
@@ -12,8 +13,25 @@ Section 10 - Deployment + Automation
 3. AWS CloudFormation 
 => where we can define how we want to build our infrastructure in AWS in a text file => import this file and deploy our infrastructure globally 
 
+3.1 AWS Cloud Development Kit (CDK)
+=> Define your cloud application resources using familiar programming languages
+=> Model application infrastructure using a programming languages
+
 4. AWS Elastic Beanstalk 
 => Platform as a service solution 
+=> Difference vs the AWS CloudFormation is that this one is for delpoyment of Web Application 
 
 5. AWS Development tools 
 => tool sets to deploy a continuous integration and delivery architecture on AWS 
+
+5-1. AWS CodeCommit(GitHub) - Code repository => AWS CodeBuild(Jenkins) - Builds and test code => AWS CodeDeploy(Ansible) - code released for deployment
+5-2. AWS CodePipline => Connects these AWS Development tools together and it forms the pipeline so you can automate the process of moving that code through.
+5-3. AWS CodeStar => IDE connects to CodeStar => work with other Development Tools to build applications automatically
+
+6. AWS X-Ray => Used to analyzing/debug your destributed applications
+=> Shows the latency between the resources/component => ex) How long did it take from Elastic Beanstalk to DynamoDB? 13ms 
+=> specially used for microservices architecture
+=> Need to integrate the X-Ray SDK with your application and install the X-Ray agent
+
+7. AWS OpsWorks (3rd party) => Configuration management service that provides managed instances of Chef and Puppet
+=>Config changes are submitted to OpsWorks => This will configure instances 

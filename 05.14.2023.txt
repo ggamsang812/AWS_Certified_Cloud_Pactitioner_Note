@@ -1,0 +1,22 @@
+Section 11 - Databases and Analytics
+
+1. Different types of databases 
+=> RDS
+=> non-RDS
+=> How we use them? 
+
+2. AWS RDS
+
+3. Amazon Aurora 
+
+4. Amazon RedShift => Data warehouse 
+
+5. Amazon DynamoDB 
+
+6. Amazon ElasticCache
+
+7. Amazon Elastic Map Reduce (EMR) => Big data analytics
+
+8. Amazon Athena and AWS Glue => Analytic services themselves
+
+9. Amazon Kinesis => streaming data services

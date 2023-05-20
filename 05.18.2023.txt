@@ -6,21 +6,38 @@ Section 11 - Databases and Analytics
 => How we use them? 
 => Operational vs Analytic
 
-2. AWS RDS => Runs on EC2 instances => Encryption uses AWS Key Management Service (KMS)
+2. AWS RDS => Runs on EC2 instances => Encryption uses AWS Key Management Service (KMS) => OLTP
 
 3. Amazon Aurora => Database in RDS family 
     => MySQL and PostgreSQL compatible relational database buildt for the cloud => much faster than other SQL 
     => Serverless
 
-4. Amazon RedShift => Data warehouse 
+4. Amazon RedShift => Data warehouse => easier to analyze data using standard SQL and Business Intelligence(BI) tools => Need EC2 instance
 
 5. Amazon DynamoDB => Key/Value store and document store 
-    => Serverless
+    => Serverless => Non-relational
+    => DAX as a caching solution
 
-6. Amazon ElasticCache => Fast temporary storage for small amount of data => In-memory database 
+6. Amazon ElasticCache => Fast temporary storage for small amount of data => In-memory database used for cacheing data 
+    => Usually put in front of other data store services for better performance 
 
-7. Amazon Elastic Map Reduce (EMR) => Big data analytics
+7. Amazon Elastic Map Reduce (EMR) => Managed implementation of Hadoop and Spark and it's used for big data analytics and Business Intelligence
 
 8. Amazon Athena and AWS Glue => Analytic services themselves
+    Athena queries data in S3 using SQL 
+    Uses AWS Glue (Data Catalog) to store information and schemas about the databases and tables 
+        => Used for preparing data for analytics
+        => Fully managed extract, transform and load (ETL) service
+        => Works with data lakes(S3), data warehouse(RedShift), and data store(RDS and EC2 database)
 
 9. Amazon Kinesis => streaming data services
+    => Usually constant amount of data
+
+
+10. Other Databases and analytic services
+    AWS Data Pipeline => Process and moves data between different AWS compute and storage services
+    Amazon QuickSight => Business Intelligence service => create/publish interactive BI dashboards for Machine Learning-powered insights 
+    Amazon Neptune => Managed graph database service (ex. Facebook where you have different relationships in different entities)
+    Amazon DocumentDB => Non-relational database service => supports MongoDB, JSON data
+    Amazon QLDB => Managed ledger database (the recording of exactly what transactions have taken place)
+    Amazon Managed Blockchain => Service for joining public and private networks using Hyperledger Fabric and Ethereum

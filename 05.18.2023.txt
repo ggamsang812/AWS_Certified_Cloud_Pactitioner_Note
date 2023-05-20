@@ -4,16 +4,20 @@ Section 11 - Databases and Analytics
 => RDS
 => non-RDS
 => How we use them? 
+=> Operational vs Analytic
 
-2. AWS RDS
+2. AWS RDS => Runs on EC2 instances => Encryption uses AWS Key Management Service (KMS)
 
-3. Amazon Aurora 
+3. Amazon Aurora => Database in RDS family 
+    => MySQL and PostgreSQL compatible relational database buildt for the cloud => much faster than other SQL 
+    => Serverless
 
 4. Amazon RedShift => Data warehouse 
 
-5. Amazon DynamoDB 
+5. Amazon DynamoDB => Key/Value store and document store 
+    => Serverless
 
-6. Amazon ElasticCache
+6. Amazon ElasticCache => Fast temporary storage for small amount of data => In-memory database 
 
 7. Amazon Elastic Map Reduce (EMR) => Big data analytics
 

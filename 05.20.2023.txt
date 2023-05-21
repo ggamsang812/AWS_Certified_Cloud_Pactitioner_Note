@@ -1,6 +1,11 @@
 Section 12 - Management and Governance 
 
 1. AWS Organizaions - service control policy
+    => Consolidated Billing => Single bill across your account
+    => All features => gives additional features such as service control policy and tag policy
+    => Includes root accounts and organizaional units (Policies are applied)
+    => Paying Account => cannot access other resources of other account -> just paying the bill
+    => Linked Account => accounts those are linked to paying account to see the bill
 
 2. AWS Control Tower - service that leverages the Organizaions and other services for creating and configuring accounts
 

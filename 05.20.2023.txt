@@ -1,2 +1,11 @@
 Section 12 - Management and Governance 
 
+1. AWS Organizaions - service control policy
+
+2. AWS Control Tower - service that leverages the Organizaions and other services for creating and configuring accounts
+
+3. AWS Systems Manager - service we can use to manage our EC2 instances like installing software or patches 
+
+4. AWS Config - for configuration compliance 
+
+5. Some tools to review the health of our environment

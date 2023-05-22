@@ -10,10 +10,22 @@ Section 12 - Management and Governance
 2. AWS Control Tower - service that leverages the Organizaions and other services for creating and configuring accounts
     => Simplifies the process of creating multi-account environment
     => Sets up governance, compliance and security guardrails for you
+    => provides gaurdrail   
 
 3. AWS Systems Manager - service we can use to manage our EC2 instances like installing software or patches 
     => 
 
 4. AWS Config - for configuration compliance 
+    => evaluates the configuration against desired configurations
+    => if configuration changes occur, information is sent to AWS Config
+    => AWS Config now send notifications to SNS or CloudWatch 
 
-5. Some tools to review the health of our environment
+5. AWS Service Catalog => service to create catalogs of IT services that are allowed/approved for use on AWS 
+
+6. AWS Trusted Advisor => an online resource that helps to reduce cost, increase performance and improve security by optimizing AWS environment 
+    => provides real time guidance based on best practices on Cost Optimization, Performance, Security and Fault Tolerance 
+
+7. AWS Personal Health Dashboard 
+    => provides alerts and remediation guidance when there is an event that impacts you and your resources
+8. AWS Services Health Dashboard 
+    => More general => You decide whether this is critical or not => everybody can view this 

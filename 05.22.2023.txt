@@ -1,0 +1,6 @@
+Section 13 - AWS Cloud Security and Identity 
+
+1. AWS Directory Service 
+    => for Microsoft Active Directory 
+    => AD Connector for on-premises user to log into AWS services with their existing AD credentials
+    => Simple AD for low scale, low cost, AD implementation based on Samba

@@ -8,8 +8,11 @@ Section 12 - Management and Governance
     => Linked Account => accounts those are linked to paying account to see the bill
 
 2. AWS Control Tower - service that leverages the Organizaions and other services for creating and configuring accounts
+    => Simplifies the process of creating multi-account environment
+    => Sets up governance, compliance and security guardrails for you
 
 3. AWS Systems Manager - service we can use to manage our EC2 instances like installing software or patches 
+    => 
 
 4. AWS Config - for configuration compliance 
 

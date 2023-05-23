@@ -26,5 +26,6 @@ Section 12 - Management and Governance
 
 7. AWS Personal Health Dashboard 
     => provides alerts and remediation guidance when there is an event that impacts you and your resources
+    
 8. AWS Services Health Dashboard 
     => More general => You decide whether this is critical or not => everybody can view this 

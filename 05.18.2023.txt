@@ -42,4 +42,5 @@ Section 11 - Databases and Analytics
     Amazon QLDB => Managed ledger database (the recording of exactly what transactions have taken place)
     Amazon Managed Blockchain => Service for joining public and private networks using Hyperledger Fabric and Ethereum
 
+
     

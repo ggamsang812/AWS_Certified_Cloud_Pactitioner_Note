@@ -3,7 +3,7 @@ Section 13 - AWS Cloud Security and Identity
 1. AWS Directory Service 
     => for Microsoft Active Directory 
     => AD Connector for on-premises user to log into AWS services with their existing AD credentials
-    => simple AD for low scale, low cost, AD implementation based on Samba
+    => Simple AD for low scale, low cost, AD implementation based on Samba
 
 2. Systems Manager Parameter Store
     => provides secure, hierarchical storage for configuration data management (data string) and secrets management
@@ -13,4 +13,39 @@ Section 13 - AWS Cloud Security and Identity
     => allows native and automatic rotation of keys
 
 4. Encryption 
-    => 
+    => Encryption at rest 
+    => Encryption at transit 
+    => Asymmetric Encryption => public key cryptography => public key for encryption / private key for decryption
+    => AWS KMS => create and manage symmetric and asymmetric encryption key => multi-tenant
+    => AWS CloudHSM (Hardware Security Module) => Higher level of security due to its physical seperation and a single tenancy
+
+5. Logging and Auditing
+    => CloudWatch and CloudTrail
+    => VPC Flow Logs => for VPC, Subnet and Network interface level
+    => Access Logs for Elastic Load Balancer and S3
+
+6. Detect and Respond
+    => Amazon Detective => identify the root cause of potential security issues or suspicious activities => uses machine learning, statistical analysis
+    => AWS GuardDuty => intelligent threat detection service => feeds data to Amazon Detective
+    => Amazon Macie => protect sensitive data on S3 using machine learning and pattern matching
+
+7. Firewalls and DDoS Protection
+    => AWS WAF (web application firewall) => block SQL Injection and Cross site scripting
+    => AWS Shield => DDoS protection service 
+        => Standard - No Cost / Advanced - 3k per month and 1 year commitment 
+
+8. Compliance Services
+    => AWS Config is one service you can use for compliance config
+    => AWS Artifact => AWS' security and compliance reports and select online agreements
+        => SOC and PCI reports
+
+9. Security Management and Support 
+    => AWS Security Hub => provides comprehensive view of security alerts and posture across AWS accounts
+    => AWS Security Bulletins => Security and privacy events affecting AWS services
+    => AWS Trust & Safety Team => Contact people for AWS security team (including DDoS, Spam)
+
+10. Penetration Testing
+    => There is a customer support policy for penetration testing => need to check before actual test
+
+11. AWS Shared Responsibility Model
+    => Data encryption is customer responsibility

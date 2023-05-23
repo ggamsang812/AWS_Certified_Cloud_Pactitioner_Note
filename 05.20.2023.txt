@@ -13,7 +13,6 @@ Section 12 - Management and Governance
     => provides gaurdrail   
 
 3. AWS Systems Manager - service we can use to manage our EC2 instances like installing software or patches 
-    => 
 
 4. AWS Config - for configuration compliance 
     => evaluates the configuration against desired configurations

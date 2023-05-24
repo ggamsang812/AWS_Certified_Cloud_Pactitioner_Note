@@ -1,0 +1,29 @@
+Section 15 - Accounts, Builling and Support
+=> No need to know the different prices - just need to know the different model
+
+1. AWS Pricing Fundamentals 
+    => Compute / Storage / Outbound Data Transfer 
+    => Pay-as-you-go => Both over-estimate and under-estimate is a problem, so using that auto-scaling is a good idea, so we don't need to predict
+    => Save when you reserve => Can save up to 75% compared to on-demand => More you pay upfront - more discount 
+    => Pay less by using more => Volume-based discount 
+
+2. EC2 Pricing Options and Use Cases
+    => Dedicated Instances / Hosts - both on physical server
+
+3. Pricing for other AWS services 
+
+4. AWS Pricing Calculator => estimating your cost on AWS 
+
+5. AWS Support Plans
+    => You only get billing support unless you pay for a support plan 
+    => Developer
+    => Business
+    =? Enterprise On-Ramp => a pool of Technical Account Managers (TAM) => Concierge Support Team 
+    => Enterprise => designated Technical Account Manager => Concierge Support Team 
+
+6. AWS Cost Management Tools
+    => AWS Budget => Set budget and alert => can be integrated with Cost Explorer
+    => AWS Cost Explorer => can view cost data of last 13 months and forcast how much you're likely to spend next 3 months
+        => Use to discover patterns 
+    => AWS Cost & Usage Report => publish AWS billing report to S3
+    => AWS Price List API => Query the prices of AWS services => can set alerts if Amazon moves the cost up/down 

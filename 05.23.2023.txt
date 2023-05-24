@@ -1,1 +1,10 @@
-Section 14
+Section 14 - Architecting for the Cloud
+
+1. AWS Well-Architected 
+    => AWS Well-Architected Pillars (6 Pillars)
+
+2. AWS Well-Architected Framework 
+    => Helps you understand the pros and cons of decisions you make while building systems on AWS 
+    => Based on 6 Pillars 
+
+3. AWS Cloud Adoption Framework (CAF)

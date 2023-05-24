@@ -1,0 +1,12 @@
+Section 16 - Migration, Machine Learning and More
+
+1. AWS Migration Tools
+    => Usually for migration, private connections like VPN or Direct Connect is preferred. => You don't really want to use internet unless you have to
+    => AWS Application Discovery Service => discovers what's in your data center 
+    => AWS Application Migration Service to EC2 => for lift and shift migrations
+    => AWS Database Migration Service to RDS
+    => AWS DataSync to S3 and EFS
+    => AWS Migration Hub => manage what's happening in migrations
+    => AWS Snowball and Snowmobile => for migration of large volumes of data to AWS => physical device that AWS sends to you and you return it to them
+        => Snowball Edge Compute Optimized / Snowball Edge Storage Optimized / Snowcone (for both compute, storage and data transfer)
+        => Snowball (80TB/50TB) / Snowball Edge (100TB) / Snowmobile (100PB)

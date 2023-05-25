@@ -9,4 +9,41 @@ Section 16 - Migration, Machine Learning and More
     => AWS Migration Hub => manage what's happening in migrations
     => AWS Snowball and Snowmobile => for migration of large volumes of data to AWS => physical device that AWS sends to you and you return it to them
         => Snowball Edge Compute Optimized / Snowball Edge Storage Optimized / Snowcone (for both compute, storage and data transfer)
-        => Snowball (80TB/50TB) / Snowball Edge (100TB) / Snowmobile (100PB)
+        => Snowball (80TB/50TB - petabyte scale) / Snowball Edge (100TB - petabyte scale) / Snowmobile (100PB - exabyte scale)
+
+2. AWS Machine Learning Services
+    => AWS Rekognition => Images / videos analysis
+    => Amazon Transcribe => Speech to Text
+    => Amazon Translate => language translation 
+    => Amazon Textract
+    => Amazon SageMaker => prepare, build, train and deploy high-quality machine learning models
+    => Amazon Comprehend => to uncover information in unstructured data => ex) find out what your customer wants/needs/thinks
+    => Amazon Lex => Conversational AI for Chatbots 
+    => Amazon Polly => Text to speech 
+    => Amazon Forecast => Time-series forecasting service 
+    => Amazon DevOps Guru => improves application operational performance and availability 
+
+3. End User Computing 
+    => Amazon Workspaces => Managed Desktop-as-a-Service (Daas) solution
+        => Client can use the desktop that is somewhere else => Desktop is streamed to browser
+    => AWS AppStream 2.0 => Steamming the individual application, not the whole desktop, to browser
+    => AWS WorkLink => giving that interface into your on-premises application
+        => one click access to your internal websites and web apps using mobile phone browser
+    => AWS WorkDocs => similar to Google Apps => create edit and share content that's centrally stored on AWS 
+
+4. Internet of Thing (IoT)
+    => ex) car, fridge sending information of how it's doing to company
+    => IoT device can communicate with other device 
+    => AWS IoT Core
+
+5. AWS Device Farm 
+    => Web and mobile application testing services
+    => Test how your app looks accross different device 
+
+6. AWS Knowledge Center
+    => collection of information to help you 
+    => frequently asked questions 
+
+7. Amazon Connect 
+    => Cloud Contact Center => Human agents helping customer
+    => For telephony automation, chatbots and analytics 

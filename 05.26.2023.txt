@@ -1,0 +1,9 @@
+AWS practice exam
+    => Training exam 1 - 80%
+    => Training exam 2 - 83%
+    => Final Exam simulator - 73%
+    => Final Exam simulator - 80%
+    => Final Exam simulator - 69%
+    => Final Exam simulator - 80%
+
+AWS Certified Cloud Practitioner Exam - Pass

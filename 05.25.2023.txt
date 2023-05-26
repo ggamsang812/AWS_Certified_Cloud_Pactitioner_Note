@@ -1,5 +1,0 @@
-AWS practice exam
-    => Training exam 1 - 80%
-    => Training exam 2 - 83%
-    => Final Exam simulator - 73%
-    => Final Exam simulator - 80%

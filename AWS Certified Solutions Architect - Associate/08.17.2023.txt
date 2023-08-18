@@ -1,0 +1,39 @@
+To download cli:
+    https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html
+    install windows version
+    start menu => cmd => aws --version => you should get something
+
+still need to set credentials
+
+
+1. Actual person will log in using username and password (MFA optional)
+2. Access key ID and Secret access key for programmatic access => CLI or API 
+3. Group is a way of organizing users => create a group and put a user into that group => apply/attach Policy(Permission) to that Group
+    => If indiviual user already have permission, they would gain those permission as well
+4. Identity-based policies => can be applied to users, groups and roles
+    => inline policy => 1-1 relationship with the user, group or role => if you delete the user with inline policy, you delete the line policy as well => inline policy cannot be shared through
+    => Managed policy => AWS Managed vs. Customer Managed
+5. Roles are used for delegation and are assumed 
+    => It's a hat that users, application and services can assume it
+6. Resource-based polices => policies apply to resource such as S3 => There are limited number of resource that has resource-based policies
+    => will have "Principal" which will have the arn, action and resource => Principal permission to perform specific actions on the resource
+    => can applied to IAM Role => Trust policy is an example of resource-based policy
+
+7. Trust policy vs. permission policy
+    => TP control who can assume that role (Using AWS STS)
+
+8. Permissions Boundary => useful for Preventing Privilege Escalation
+ => What if Mike have full access only to IAM? I can create a user with full admin access and now I have full admin access.
+ => Using Permission Boundary, I can put a boundary on Mike's account saying Mike can create a user with same or fewer permissions than him.
+
+9. Best IAM Practice 
+    => Require human users to use federation to AWS using temporary credentials
+    => Require workloads to use temporary credentials with IAM roles to access AWS 
+    => MFA
+    => Rotate access keys regularly
+    => don't use root user 
+    => least-Privilege permission
+    => use AWS Managed policy
+    => Use IAM Access Analyzer to generate least Privilege policy
+    => regularly clean up user, role and groups
+    => Use conditions in policy

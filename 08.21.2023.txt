@@ -1,0 +1,21 @@
+EC2 - Part2 
+We need our Ec2 instances to connect to other service
+
+1. Access Key
+    => Associated with an IAM User account 
+    => Key will pick up whatever the policy is given to user
+    => Key credentials will need to be configured and stored on the instance
+2. Instance Profile
+    => IAM Role is assumed by the EC2 instance
+    => No credentials are stored on the instance
+
+3. EC2 Placement Groups => A way that you can control how AWS deploys your EC2 instances and places them within/accross AZ
+    => Cluster - low-latency netwrok; tightly-coupled; HPC applications
+    => Partition - do not share the underlying hardware; distributed and replicated workloads; Hadoop, Cassandra and Kafka
+    => Spread - distinct underlying hardware
+
+4. Network Interfaces 
+    => ENI(Elastic Network Interface) - Basic; Can be used with all instance type
+    => ENA(Elastic Network Adapter) - Enhanced networking performance; higher bandwidth and lower latency; Must choose supported instance type
+    => EFA(Elastic Fabric Adapter) - For MPI and ML use cases; tightly coupled applications; can use with all instance types
+    

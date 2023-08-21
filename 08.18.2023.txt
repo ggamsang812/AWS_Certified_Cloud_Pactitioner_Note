@@ -1,0 +1,12 @@
+Section 3 - EC2
+1. EC2 Host is managed by AWS => EC2 instance is a virtual server which we manage
+    => Selection of instance type for CPU, memory, storage and networking combinations => Dictate the performance and cost
+    => AMI = configuration of the instance => Created by EBS Snapshot (Point-in-time backup of an instance)
+    => EBS volume will be attached to EC2 for data storage 
+    => EC2 is inside the Security Group which controls inbound and outbound traffic
+    => Internet Gateway enables access to/from the internet
+
+2. EC2 User Data and Metadata
+    => User Data is gives the ability to run commands when the system is starting => it's a code/commands running on the command line
+    => Instance Metadata is data about your EC2 instance => will have different information about instance 
+        => return information about the instance that is recorded locally

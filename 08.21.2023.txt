@@ -15,7 +15,24 @@ We need our Ec2 instances to connect to other service
     => Spread - distinct underlying hardware
 
 4. Network Interfaces 
-    => ENI(Elastic Network Interface) - Basic; Can be used with all instance type
+    => ENI(Elastic Network Interface) - Basic; Can be used with all instance type; within AZ
     => ENA(Elastic Network Adapter) - Enhanced networking performance; higher bandwidth and lower latency; Must choose supported instance type
     => EFA(Elastic Fabric Adapter) - For MPI and ML use cases; tightly coupled applications; can use with all instance types
-    
+
+5. Public, Private and Elastic IP Addresses
+    => Public - Dynamic addres; Don't use this in the application bc this will change; Used in Public Subnets
+    => Private - Retained; Used in both Public and Private Subnets
+    => Elastic - Public IP but it's static; Does not change; You do get charged if not used
+
+6. NAT(Network Address Translation) for Public Addresses
+    => Public/Elastic IP doesn't show in the instance; it is associated
+    => Internet Gateway performs NAT 
+
+7. Private Subnets 
+    => The difference between Public vs Private subnet is really configurations
+    => Two things making the subnet Private: 
+        1. Not assigning private IP addres to our instances within private subnet
+        2. We have route table that does not have Internet Gateway attached to it
+        => This will make our instances not communicate with outside world 
+    => Public subnet instance having private IP to talk to instance in private subnet
+        => This is called Bastion Hosts 

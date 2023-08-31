@@ -1,0 +1,10 @@
+1. NAT Gateways and NAT Instances Overview
+    => NAT is used to translate addresses between public and private IP addresses
+    => enable the instances in private subnets to connect to the internet only; This is outbound only
+    => NAT Gateway is created in the Public Subnet; It will have elastic-IP and Private IP
+    => NAT Gateway ID must be specified in the private subnet route table
+    => NAT instances are similar to NAT Gateway; Doesn't get used much now with the Gateway; It's an EC2 instance
+        => Uses a special AMI with the string "amzn-ami-vpc-nat" in the name
+        => Must disable source/destination checks; essentially this will allow translation
+        => Route Table looks the same 
+        => Can use as bastion host (should be seperate instance though)
